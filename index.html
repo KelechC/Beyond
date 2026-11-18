@@ -302,6 +302,94 @@ button { font: inherit; }
   .footer-bottom span:nth-child(2), .footer-bottom a { text-align: right; }
 }
 
+/* GET INVOLVED PATHWAYS */
+
+.involvement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 45px 0 35px;
+  position: relative;
+  z-index: 2;
+}
+
+.involvement-card {
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  transition: transform .3s ease, border-color .3s ease;
+}
+
+.involvement-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--orange);
+}
+
+.involvement-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: var(--orange);
+  margin-bottom: 22px;
+}
+
+.involvement-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  line-height: 1.1;
+  margin: 0 0 12px;
+  color: var(--black);
+}
+
+.involvement-card p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #6B6B6B;
+  margin: 0 0 25px;
+}
+
+.involvement-card a {
+  display: inline-block;
+  width: fit-content;
+  margin-top: auto;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--black);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.involvement-card a:hover {
+  color: var(--orange);
+}
+
+.involvement-card a:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 5px;
+}
+
+@media (max-width: 680px) {
+  .involvement-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 32px 0;
+  }
+
+  .involvement-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .involvement-card h3 {
+    font-size: 23px;
+  }
+    }
+    
   </style>
 </head>
 <body>
